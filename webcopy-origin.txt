@@ -1,0 +1,440 @@
+Uri: https://cdn.jsdelivr.net/npm/@riophae/vue-treeselect@^0.4.0/dist/vue-treeselect.umd.min.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\npm\@riophae\vue-treeselect@^0.4.0\dist\vue-treeselect.umd.min.js
+Content Type: application/javascript
+
+Uri: https://cdn.jsdelivr.net/npm/vue@2.6.14
+File Name: C:\Downloaded Web Sites\uk-work.ru\npm\vue@2.6.14
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.65/pdfmake.min.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\ajax\libs\pdfmake\0.1.65\pdfmake.min.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.65/vfs_fonts.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\ajax\libs\pdfmake\0.1.65\vfs_fonts.js
+Content Type: application/javascript
+
+Uri: https://mc.yandex.ru/watch/57123775
+File Name: C:\Downloaded Web Sites\uk-work.ru\watch\57123775
+Content Type: image/gif
+
+Uri: https://uk-work.ru/
+File Name: C:\Downloaded Web Sites\uk-work.ru\index.htm
+Content Type: text/html
+
+Uri: https://uk-work.ru/assets/components/jquery/jquery.min.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\components\jquery\jquery.min.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/assets/css/fancy.css
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\css\fancy.css
+Content Type: text/css
+
+Uri: https://uk-work.ru/assets/css/style.min.css
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\css\style.min.css
+Content Type: text/css
+
+Uri: https://uk-work.ru/assets/css/swiper.css
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\css\swiper.css
+Content Type: text/css
+
+Uri: https://uk-work.ru/assets/css/video.css
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\css\video.css
+Content Type: text/css
+
+Uri: https://uk-work.ru/assets/css/vue-treeselect.css
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\css\vue-treeselect.css
+Content Type: text/css
+
+Uri: https://uk-work.ru/assets/data/store.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\data\store.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/assets/docs/Zoloterra Ltd Complaints Policy.pdf
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\docs\Zoloterra Ltd Complaints Policy.pdf
+Content Type: application/pdf
+
+Uri: https://uk-work.ru/assets/docs/Zoloterra Ltd Equality and Diversity.pdf
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\docs\Zoloterra Ltd Equality and Diversity.pdf
+Content Type: application/pdf
+
+Uri: https://uk-work.ru/assets/docs/Zoloterra Ltd GDPR.pdf
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\docs\Zoloterra Ltd GDPR.pdf
+Content Type: application/pdf
+
+Uri: https://uk-work.ru/assets/fonts/Stem-Bold.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\fonts\Stem-Bold.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/fonts/Stem-Bold.ttf
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\fonts\Stem-Bold.ttf
+Content Type: 
+
+Uri: https://uk-work.ru/assets/fonts/Stem-Bold.woff
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\fonts\Stem-Bold.woff
+Content Type: application/x-font-woff
+
+Uri: https://uk-work.ru/assets/fonts/Stem-Medium.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\fonts\Stem-Medium.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/fonts/Stem-Medium.ttf
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\fonts\Stem-Medium.ttf
+Content Type: 
+
+Uri: https://uk-work.ru/assets/fonts/Stem-Medium.woff
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\fonts\Stem-Medium.woff
+Content Type: application/x-font-woff
+
+Uri: https://uk-work.ru/assets/fonts/Stem-Regular.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\fonts\Stem-Regular.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/fonts/Stem-Regular.ttf
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\fonts\Stem-Regular.ttf
+Content Type: 
+
+Uri: https://uk-work.ru/assets/fonts/Stem-Regular.woff
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\fonts\Stem-Regular.woff
+Content Type: application/x-font-woff
+
+Uri: https://uk-work.ru/assets/fonts/Stem-Thin.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\fonts\Stem-Thin.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/fonts/Stem-Thin.ttf
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\fonts\Stem-Thin.ttf
+Content Type: 
+
+Uri: https://uk-work.ru/assets/fonts/Stem-Thin.woff
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\fonts\Stem-Thin.woff
+Content Type: application/x-font-woff
+
+Uri: https://uk-work.ru/assets/img/11.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\11.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/12.JPG
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\12.JPG
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/13.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\13.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/14.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\14.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/15.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\15.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/18.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\18.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/19.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\19.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/20.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\20.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/21.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\21.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/22.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\22.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/23.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\23.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/24.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\24.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/25.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\25.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/26.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\26.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/27.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\27.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/28.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\28.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/29.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\29.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/30.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\30.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/31.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\31.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/32.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\32.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/33.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\33.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/34.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\34.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/add-plus-button.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\add-plus-button.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/angle.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\angle.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/broccoli.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\broccoli.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/cherry.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\cherry.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/close-white.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\close-white.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/close.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\close.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/favicon2.ico
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\favicon2.ico
+Content Type: image/vnd.microsoft.icon
+
+Uri: https://uk-work.ru/assets/img/information.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\information.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/instagram.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\instagram.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/loading.gif
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\loading.gif
+Content Type: image/gif
+
+Uri: https://uk-work.ru/assets/img/logo.png
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\logo.png
+Content Type: image/png
+
+Uri: https://uk-work.ru/assets/img/onion.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\onion.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/pdf.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\pdf.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/pea.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\pea.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/pear.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\pear.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/pic1.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\pic1.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/pic2.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\pic2.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/pic3.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\pic3.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/pic4.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\pic4.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/play-button.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\play-button.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/play-button1.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\play-button1.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/question.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\question.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/review2021_1.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\review2021_1.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/review2021_2.jpeg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\review2021_2.jpeg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/review2021_3.jpeg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\review2021_3.jpeg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/review2021_4.jpeg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\review2021_4.jpeg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/review2021_5.jpeg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\review2021_5.jpeg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/review2021_6.jpeg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\review2021_6.jpeg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/review66.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\review66.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/review77.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\review77.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/review88.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\review88.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/review89.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\review89.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/Straw.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\Straw.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/straw13.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\straw13.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/straw7.jpg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\straw7.jpg
+Content Type: image/jpeg
+
+Uri: https://uk-work.ru/assets/img/strawberry.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\strawberry.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/swp-video.mp4
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\swp-video.mp4
+Content Type: video/mp4
+
+Uri: https://uk-work.ru/assets/img/upload-file-red.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\upload-file-red.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/upload-file-white.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\upload-file-white.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/upload-file.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\upload-file.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/img/vk.svg
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\img\vk.svg
+Content Type: image/svg+xml
+
+Uri: https://uk-work.ru/assets/js/croppie.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\js\croppie.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/assets/js/jquery.fancybox.min.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\js\jquery.fancybox.min.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/assets/js/jquery.inputmask-multi.min.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\js\jquery.inputmask-multi.min.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/assets/js/jquery.inputmask.bundle.min.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\js\jquery.inputmask.bundle.min.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/assets/js/numbers.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\js\numbers.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/assets/js/scripts.min.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\js\scripts.min.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/assets/js/swiper.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\js\swiper.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/assets/js/video.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\js\video.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/assets/js/vue-mask.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\js\vue-mask.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/assets/js/vue-tel-input.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\js\vue-tel-input.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/assets/js/vue.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\assets\js\vue.js
+Content Type: application/javascript
+
+Uri: https://uk-work.ru/test.html
+File Name: C:\Downloaded Web Sites\uk-work.ru\test.html
+Content Type: text/html
+
+Uri: https://unpkg.com/@babel/polyfill@7.12.1/dist/polyfill.min.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\@babel\polyfill@7.12.1\dist\polyfill.min.js
+Content Type: application/javascript
+
+Uri: https://unpkg.com/axios@0.27.2/dist/axios.min.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\axios@0.27.2\dist\axios.min.js
+Content Type: application/javascript
+
+Uri: https://unpkg.com/imask@6.4.3/dist/imask.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\imask@6.4.3\dist\imask.js
+Content Type: application/javascript
+
+Uri: https://unpkg.com/vue-tel-input@5.12.0/dist/vue-tel-input.css
+File Name: C:\Downloaded Web Sites\uk-work.ru\vue-tel-input@5.12.0\dist\vue-tel-input.css
+Content Type: text/css
+
+Uri: https://unpkg.com/vuex@3.4.0/dist/vuex.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\vuex@3.4.0\dist\vuex.js
+Content Type: application/javascript
+
+Uri: https://www.google.com/recaptcha/api.js
+File Name: C:\Downloaded Web Sites\uk-work.ru\recaptcha\api.js
+Content Type: text/javascript
+
+Uri: https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit
+File Name: C:\Downloaded Web Sites\uk-work.ru\recaptcha\api-1.js
+Content Type: text/javascript
+

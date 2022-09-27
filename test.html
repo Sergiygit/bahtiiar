@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест для оценки опыта, мотивации и навыков английского языка</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="assets/img/favicon2.ico" type="image/x-icon">
+  <link href="assets/css/fancy.css" rel="stylesheet">
+  <link href="assets/css/vue-treeselect.css" rel="stylesheet">
+  <link href="assets/css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vue-tel-input%405.12.0/dist/vue-tel-input.css">
+  <script src="assets/components/jquery/jquery.min.js"></script>
+</head>
+
+<body class="test-page">
+  <main>
+    <div id="app">
+      <div class="test">
+        <div class="test__content">
+          <div class="test__start" v-if="!testStarted && !registrationStart && !securityCode && !courseInfo && testIntro">
+            <h1 class="test__start-title">Тест для оценки опыта, мотивации и навыков английского языка.</h1>
+            <p class="test__start-descr">Тест содержит <span>три</span> раздела, проводится <span>online
+                бесплатно.</span></p>
+            <div class="test__start-info">
+              <p>На выполнение теста отводится <span>30 минут.</span></p>
+              <p>Перед выполнением теста Вам будет предложено заполнить регистрационную форму.</p>
+            </div>
+            <button class="test__btn" type="button" @click="courseInfo = 1">Продолжить</button>
+            <button class="test__btn" type="button" v-if="0" @click="startTest()">Подтвердить</button>
+          </div>
+
+
+          <div class="test__course-info" v-if="courseInfo">
+            <p class="test__course-info-descr">Вы можете подготовиться к успешному прохождению конкурса на <a target="_blank" href="https://zoloterra.ru/swp.html">подготовительном&nbsp;курсе</a>.</p>
+              <div class="test__course-answers">
+                <div class="test__course-answer">
+                  <input class="test__course-answer-radio" type="radio" id="familiarized" value="Ознакомлен" v-model="familiarized">
+                  <label class="test__course-answer-label" for="familiarized"> ОЗНАКОМЛЕН(А) </label>
+                  </div>
+              </div>
+            <button class="test__btn" type="button" @click="courseInfo = 0; register()" :disabled="!familiarized">Продолжить</button>
+          </div>
+
+
+          <div class="test__registration" v-if="registrationStart">
+            <h2 class="test__form-title">Регистрация</h2>
+            <form class="test__form js-form" autocomplete="off">
+              <div class="test__form-row">
+                <div class="test__form-field">
+                  <input class="test__form-input" type="text" :class="{'not-empty': focused==2 || user.surname , warning: surnameValid}" @focus="inputFocus(2)" @keyup="surnameValid=false" @blur="inputBlur()" name="surname" v-model="user.surname">
+                  <span class="test__form-label">Фамилия</span>
+                </div>
+                <div class="test__form-field">
+                  <input class="test__form-input" type="text" :class="{'not-empty': focused==1 || user.name , warning: nameValid}" @focus="inputFocus(1)" @keyup="nameValid=false" @blur="inputBlur()" name="name" v-model="user.name">
+                  <span class="test__form-label">Имя</span>
+                </div>
+                <div class="test__form-field">
+                  <input class="test__form-input" type="text" :class="{'not-empty': focused==3 || user.patronymic , warning: patronymicValid}" @focus="inputFocus(3)" @blur="inputBlur()" name="patronymic" v-model="user.patronymic" @keyup="patronymicValid=false">
+                  <span class="test__form-label">Отчество</span>
+                </div>
+              </div>
+              <div class="test__form-row">
+                <div class="test__form-field">
+                  <the-mask class="test__form-input" mask="##.##.####" masked="" :class="{'not-empty': focused==4 || user.birthday , warning: birthdayValid}" @focus="inputFocus(4)" @keyup.native="birthdayValid=false" @blur="inputBlur()" name="birthday" v-model="user.birthday"></the-mask>
+                  <span class="test__form-label">Дата рождения</span>
+                </div>
+                <div class="test__form-field">
+                  <treeselect :class="{warning: fromValid}" ref="treeselect" placeholder="Выберите город" v-model="user.from" @select="handleSelect" @close="handleClose" :multiple="true" :options="options" :disable-branch-nodes="true" :value-consists-of="valueConsistsOf" :clear-on-select="clearOnSelect" :close-on-select="closeOnSelect"></treeselect>
+                </div>
+              </div>
+              <!-- <div class="test__form-row">
+                <div class="test__form-field"> -->
+                  <!-- <input class="test__form-input" type="text"
+                    :class="{'not-empty': focused==5 || user.country , warning: countryValid}" @focus="inputFocus(5)"
+                    @blur="inputBlur()" name="country" v-model="user.country">
+                  <span class="test__form-label">Страна</span> -->
+                  <!-- <p>{{ value }}</p>
+                  <treeselect ref="treeselect" v-model="value" @select="handleSelect" :multiple="true" :options="options" :disable-branch-nodes="true"
+                   :value-consists-of="valueConsistsOf" :clear-on-select="clearOnSelect"/>
+
+               </div> -->
+                <!-- <div class="test__form-field">
+                  <input class="test__form-input" type="text"
+                    :class="{'not-empty': focused==6 || user.region , warning: regionValid}" @focus="inputFocus(6)"
+                    @blur="inputBlur()" name="region" v-model="user.region">
+                  <span class="test__form-label">Регион</span>
+                </div> -->
+                <!-- <div class="test__form-field">
+                  <input class="test__form-input" type="text"
+                    :class="{'not-empty': focused==7 || user.city , warning: cityValid}" @focus="inputFocus(7)"
+                    @blur="inputBlur()" name="city" v-model="user.city">
+                  <span class="test__form-label">Город</span>
+                </div> -->
+              <!-- </div> -->
+              <div class="test__form-row">
+                <div class="test__form-field">
+                  <vue-tel-input class="test__form-input js-test-phone" v-bind="bindProps" autocomplete="offf" :class="{'not-empty' : focused==8 || user.phone , warning : phoneValid}" @keyup.native="onInputPhone" @validate="onValidatePhone" @focus="inputFocus(8)" @blur="inputBlur()" name="phone" v-model="user.phone"></vue-tel-input>
+                  <span class="test__form-label">Телефон</span>
+                  <span class="js-phone-descr"></span>
+                </div>
+                <div class="test__form-field">
+                  <input class="test__form-input" type="text" :class="{'not-empty': focused==9 || user.email , warning: emailValid}" @focus="inputFocus(9)" @keyup="emailValid=false" @blur="inputBlur()" name="email" v-model="user.email">
+                  <span class="test__form-label">Email</span>
+                </div>
+                <div class="test__form-field">
+                  <input class="test__form-input" type="text" :class="{'not-empty': focused==10 || user.skype , warning: skypeValid}" @focus="inputFocus(10)" @keyup="skypeValid=false" @blur="inputBlur()" name="skype" v-model="user.skype">
+                  <span class="test__form-label">Skype</span>
+                </div>
+              </div>
+              <div class="test__form-row test__form-row--student">
+                <div class="test__form-field">
+                  <input class="test__form-checkbox-input" type="checkbox" id="isStudent" @click="!user.student ? user.university='' : user.university=''" true-value="Студент" false-value="" v-model="user.student">
+                  <label class="test__form-checkbox-label" for="isStudent">Студент</label>
+                </div>
+                <div class="test__form-field" v-if="user.student">
+                  <input class="test__form-input" type="text" :class="{'not-empty': focused==11 || user.university , warning: universityValid}" @focus="inputFocus(11)" @blur="inputBlur()" name="university" v-model="user.university" @keyup="universityValid=false">
+                  <span class="test__form-label">Университет</span>
+                </div>
+              </div>
+              <div class="test__form-row test__form-row--agreement" :class="{ warning: agreementValid }">
+                <input class="test__form-checkbox-input" id="agreement" type="checkbox" v-model="agreement">
+                <label class="test__form-checkbox-label" for="agreement">Даю согласие на&nbsp;<a data-fancybox="" href="#policy" class="feedback__info-link"> обработку персональных данных</a></label>
+              </div>
+              <button class="test__btn" type="button" @click="checkForm">Далее</button>
+            </form>
+          </div>
+
+
+          <div class="test__securityCode" v-if="securityCode">
+            <p class="test__securityCode-title">На ваш E-mail был отправлен код проверки.</p>
+            <form>
+              <div class="test__form-field">
+                <input class="test__form-input" type="text" :class="{'not-empty': focused==12 || user.code , warning: codeValid}" @focus="inputFocus(12)" @blur="inputBlur()" v-model="user.code">
+                <span class="test__form-label">Введите код</span>
+                <p class="test__form-warning" v-if="codeValid">Неверный код</p>
+                <p class="test__form-warning-text" v-if="codeValid">Проверьте правильность ввода E-mail</p>
+              </div>
+              <button class="test__btn" type="button" @click="confirmEmail" v-if="!codeValid">Подтвердить</button>
+              <!-- <p class="test__text-again">Если вы не получили код проверки в течение 30 секунд, нажмите кнопку "Отправить повторно"</p> -->
+              <!-- <button class="test__btn test__btn--again" type="button" @click="repeatEmail" v-if="!codeValid">Отправить повторно</button> -->
+              <button class="test__btn" type="button" @click="backToRegistration()" v-if="codeValid">Назад</button>
+            </form>
+          </div>
+
+
+          <div class="test__section-start" v-if="testStarted && !sectionStarted && !finished">
+            <span class="test__section-number">Раздел {{ sectionNumber + 1}}</span>
+            <p class="test__start-title">{{ section }}</p>
+            <p class="test__start-text" v-if="sectionNumber == 0">25 вопросов, для выполнения
+              теста отводится 6 минут.</p>
+            <p class="test__start-text" v-if="sectionNumber == 1">25 вопросов, для выполнения
+                теста отводится 10 минут.</p>
+            <p class="test__start-text" v-if="sectionNumber == 2">Тест состоит из 25 вопросов, для выполнения теста
+              отводится 14 минут</p>
+            <button class="test__btn" type="button" @click="startSection">Начать</button>
+          </div>
+
+
+          <div class="test__end" v-if="finished && !showScores">
+            <p class="test__course">Заинтересованы ли Вы в прохождении <a target="_blank" href="https://zoloterra.ru/swp.html">подготовительного курса</a>?</p>
+            <div class="test__course-answers">
+              <div class="test__course-answer">
+                <input class="test__course-answer-radio" type="radio" name="courseAnswers" id="yes" value="yes" v-model="user.course">
+                <label class="test__course-answer-label" for="yes"> Да </label>
+                </div>
+                <div class="test__course-answer">
+                  <input class="test__course-answer-radio" type="radio" name="courseAnswers" id="no" value="no" v-model="user.course">
+                  <label class="test__course-answer-label" for="no"> Нет </label>
+                </div>
+            </div>
+            <button class="test__send-result-btn" type="button" @click="sendData" :disabled="!user.course" :class="{loading: loading}">Отправить результат</button>
+          </div>
+
+          <div class="test__attempts" v-if="noAttempts">
+            <p>Количество попыток пройти тест превышено.</p>
+          </div>
+
+          <div v-if="showScores">
+            <p class="test__scores-title-text">Результат Вашего теста получен.</p>
+            <p class="test__scores-title-text">В случае прохождения по конкурсу, мы свяжемся с Вами по электронной почте.</p>
+            <p class="test__scores-text">Не забывайте проверять папку «спам».</p>
+            <p class="test__scores-title">Ваш результат:</p>
+            <div class="test__scores">
+              <div class="test__scores-item">
+                <span class="test__scores-item-label">Опыт: </span><span class="test__scores-item-value">{{ scores[0].score }}</span>
+              </div>
+              <div class="test__scores-item">
+                <span class="test__scores-item-label">Мотивация: </span> <span class="test__scores-item-value">{{ scores[1].score }}</span>
+              </div>
+              <div class="test__scores-item">
+                <span class="test__scores-item-label">Навыки английского языка: </span><span class="test__scores-item-value">{{ scores[2].score }}</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="test__question" v-if="sectionStarted">
+            <span class="test__question-time js-timer" ref="timer"></span>
+            <p class="test__question-number"> Вопрос {{currentQuestion + 1 }}</p>
+            <div class="test__question-text" v-html="test[currentQuestion].question"></div>
+            <div class="test__answers">
+              <div class="test__answer" v-for="(answer, index) in test[currentQuestion].answers" :key="index" v-if="!test[currentQuestion].multiple && !test[currentQuestion].word">
+                <input class="test__answer-radio" type="radio" :id="'answer' + index" :name="'answers' + currentQuestion" @click="answerClick(answer.correct)" :value="answer.text" v-model="chosenAnswer">
+                <label class="test__answer-btn" :for="'answer' + index"> {{ answer.text }} </label>
+              </div>
+              <div class="test__answer" v-for="(answer, index) in test[currentQuestion].answers" :key="index" v-if="test[currentQuestion].multiple">
+                <input class="test__answer-radio" type="checkbox" :id="'answer' + index" @click="multipleClick(answer.text)" :value="answer.text" v-model="chosenAnswers">
+                <label class="test__answer-btn" :for="'answer' + index">
+                  <span> {{ answer.text }} </span>
+                  <span class="test__answer-index" v-if="chosenItem(answer.text)>0">
+                    {{ chosenItem(answer.text) }}</span>
+                </label>
+              </div>
+              <div class="test__answer test__answer--gap" v-if="test[currentQuestion].word">
+                <label class="test__answer-label">Ответ:</label>
+                <input class="test__answer-gap" placeholder="Введите ответ" v-model="gap">
+              </div>
+            </div>
+            <button class="test__next-btn" type="button" @click="nextQuestion()" :disabled="answerChosen">
+              Далее
+              <span class="test__next-btn-arrow"></span>
+            </button>
+            <div></div>
+            <!-- <p v-for="(answer,index) in userAnswers"> {{ answer }} </p> -->
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="policy">
+    <h1>Политика конфиденциальности</h1>
+    <div class="contacts-wrapper">
+      <p><span style="font-weight:bold">1. Мы заботимся о Вашей конфиденциальности</span></p>
+      <p>Частное образовательное учреждение Дополнительного образования «Золотерра» уделяет большое внимание защите
+        конфиденциальности своих клиентов.</p>
+      <p>Настоящая Политика конфиденциальности (Политика в отношении обработки ПДн) (далее – «<span style="font-weight:bold">Политика</span>») подготовлена в соответствии с п. 2 ч .1 ст. 18.1 Федерального
+        закона Российской Федерации «О персональных данных» N 152-ФЗ от 27 июля 2006 года (далее – «152-ФЗ») и
+        определяет позицию Частного образовательного учреждения Дополнительного образования «Золотерра» (далее – «<span style="font-weight:bold">Золотерра/Компания</span>») в области обработки и защиты персональных данных,
+        соблюдения прав и свобод каждого человека и, в особенности, права на неприкосновенность частной жизни, личную и
+        семейную тайну.</p>
+      <p>Настоящая Политика применяется по отношению ко всем персональным данным (далее – «<span style="font-weight:bold">ПДн</span>») которые мы собираем или получаем оффлайн или онлайн, включая ПДн,
+        собранные или предоставленные через наши веб-сайты, приложения, виджеты и прочие интерактивные мобильные функции
+        (совместно именуемые как наши «<span style="font-weight:bold">Приложения</span>»), на наших страницах в
+        социальных медиа, управляемых нами (наши «<span style="font-weight:bold">Страницы в Социальных Медиа</span>»), а
+        также с помощью электронных писем в формате HTML, которые мы Вам отправляем (включая Страницы в Социальных
+        Медиа, Приложения и Веб-сайты, совместно именуемые «<span style="font-weight:bold">Сайты</span>»). Посещая наши
+        Сайты, Вы принимаете и соглашаетесь с правилами, описанными в данной Политике. Если Вы не согласны с какими-либо
+        условиями данной Политики, пожалуйста, не пользуйтесь Сайтами или не предоставляйте никаких Данных.</p>
+      <p><span style="font-weight:bold">2. Персональные данные</span></p>
+      <p>Персональные данные – это любая информация, относящаяся к прямо или косвенно определенному или определяемому
+        физическому лицу.</p>
+      <p><a></a> Мы можем получать Ваши Персональные данные множеством способов, в то числе:</p>
+      <ul>
+        <li><span style="font-weight:bold">Через Сайты:</span> мы можем собирать Персональные данные через Сайты,
+          например, когда Вы подписываетесь на новостную рассылку, бронируете курс обучения или совершаете покупку.</li>
+        <li><span style="font-weight:bold">От Вас:</span> мы можем получать от Вас Персональные данные оффлайн,
+          например, когда Вы обращаетесь в отдел обслуживания клиентов, заключения договора на оказание образовательных
+          услуг.</li>
+        <li><span style="font-weight:bold">Из других наших источников:</span> мы можем получать Ваши ПДн из других
+          источников, таких, как общедоступные базы данных; партнеры по совместному маркетингу; платформы Социальных
+          медиа; от людей, которые находятся у Вас в друзьях или с которыми Вы каким-либо другим образом связаны через
+          социальные медиа, а также от третьих лиц. Например, если Вы решите привязать Вашу учетную запись в социальной
+          сети к нашему Веб-сайту, мы получим определенную информацию из Вашей учетной записи в социальной сети, что
+          может включать информацию, входящую в Ваш профиль или профили Ваших друзей.</li>
+      </ul>
+      <p><span style="font-weight:bold">Какую дополнительную информацию мы собираем?</span></p>
+      <p>Помимо ваших Персональных данных мы можем получать дополнительную информацию следующими средствами:</p>
+      <ul>
+        <li><span style="font-weight:bold">Через Ваш браузер или устройство:</span> определенная информация собирается
+          большинством браузеров или автоматически через Ваше устройство. Мы используем данную информацию в целях
+          статистики, а также чтобы убедиться, что Сайты работают правильно.</li>
+        <li><span style="font-weight:bold">Через лог-файлы сервера:</span> Ваш «IP адрес» – это номер, который
+          автоматически приписывается Вашему компьютеру или устройству, с помощью которых вы выходите в Интернет через
+          Вашего провайдера. IP адрес идентифицируется и записывается автоматически в лог-файлах нашего сервера всегда,
+          когда Вы посещаете Сайты, также, как и время посещения и посещенные страницы.</li>
+        <li><span style="font-weight:bold">При использовании куки-файлов:</span> куки-файлы позволяют веб-серверу
+          переносить данные на компьютер либо на устройство для ведения протокола и других целей. Для подробной
+          информации о куки-файлах, которые мы используем, и целях данного использования смотрите нашу Политику в
+          отношении куки-файлов. Если Вы хотите заблокировать нашу возможность получать Вашу информацию с помощью
+          куки-файлов, Вы можете изменить настройки Вашего веб-браузера, что позволит Вам принимать либо блокировать
+          куки-файлы.</li>
+        <li><span style="font-weight:bold">При использовании Вами Приложения:</span> когда Вы скачиваете и используете
+          Приложение, мы и наши сервис-провайдеры можем отслеживать и собирать данные об использовании Приложения, такие
+          как дату и время обращения Приложения на Вашем устройстве к нашим серверам, а также данные о том, какая
+          информация и файлы были загружены в Приложение, на основе номера Вашего устройства.</li>
+        <li><span style="font-weight:bold">Физическое местоположение:</span> мы можем получить информацию о физическом
+          местоположении Вашего устройства.</li>
+      </ul>
+      <p>В некоторых случаях мы используем услугу приема платежей от третьих лиц для обработки покупок, осуществляемых
+        через Сайты. В этих случаях Ваши ПДн могут быть получены третьим лицом, а не нами, и к ним применяются политика
+        конфиденциальности третьего лица, а не данная Политика. Мы не контролируем использование или раскрытие Ваших ПДн
+        третьим лицом и не несем за это ответственности.</p>
+      <p><span style="font-weight:bold">Как мы используем Персональные данные</span></p>
+      <p>Мы можем использовать Персональные данные в следующих целях:</p>
+      <ul>
+        <li>Для выполнения условий договора стороной которого, выгодоприобретателем или поручителем, по которому
+          являетесь Вы.</li>
+        <li>Чтобы отвечать на Ваши запросы и выполнять Ваши заявки, например, отправлять Вам новостные рассылки или
+          отвечать на Ваши вопросы и комментарии.</li>
+        <li>Чтобы отправлять Вам административную информацию, например, информацию в отношении Сайтов и изменений наших
+          условий и правил.</li>
+        <li>Чтобы осуществить и совершить Вашу покупку, например, обработать Ваши платежи, обеспечить доставку Вашего
+          заказа, связаться с Вами в отношении данной покупки и обеспечить предоставление Вам сопутствующих
+          потребительских услуг.</li>
+        <li>Чтобы предоставлять Вам обновления и новости в отношении нашей продукции, рекламных акций и программ, а
+          также отправлять Вам приглашения для участия в специальных программах.</li>
+        <li>Чтобы Вы и другие пользователи могли общаться друг с другом с помощью Сайтов, как установлено
+          соответствующим Сайтом.</li>
+        <li>Чтобы Вы могли пользоваться доской сообщений, чатом, страницами профилей, блогами и прочими услугами, в
+          рамках которых Вы можете размещать информацию и материалы (включая наши Страницы в Социальных Медиа).</li>
+        <li>В целях нашей деятельности, таких как анализирование и управление нашей деятельностью, исследование рынка,
+          аудит, разработка новых продуктов, расширение наших Сайтов, улучшение наших услуг и продуктов, идентификация
+          тенденций в использовании, определение эффективности наших рекламных акций, улучшение интерфейса и контента
+          Сайтов на основе совершенных Вами действий на Сайтах, оценка удовлетворенности пользователей и предоставление
+          потребительских услуг (включая устранение неполадок у пользователя).</li>
+        <li>Мы используем информацию, полученную браузерами или Вашим устройством, для целей статистики, а также чтобы
+          убедиться, что Сайты функционируют должным образом.</li>
+        <li>Для более подробной информации о целях использования куки-файлов читайте нашу Политику в отношении
+          куки-файлов.</li>
+        <li>Мы можем использовать данные о физическом местонахождении Вашего устройства, чтобы предоставить Вам
+          персонализированные услуги и контент на основе данного местонахождения. Также мы можем передать информацию о
+          физическом местоположении Вашего устройства вместе с информацией о том, каким рекламные объявления Вы
+          просмотрели, и прочую полученную нами информацию нашим партнерам по маркетингу, чтобы они предоставляли Вам
+          более персонализированный контент и исследовали эффективность рекламных акций.</li>
+      </ul>
+      <p><span style="font-weight:bold">Передача персональных данных</span></p>
+      <p>Для предоставления Вам образовательных услуг, оформления бронирований, содействию в оформлении виз,
+        предоставления Вам возможностей использования Приложений, разработанных нашими партнёрами мы можем поручить
+        обработку Ваших ПДн третьим лицам в том числе находящимся за пределами РФ (осуществление трансграничной
+        передачи).</p>
+      <p>Трансграничная передача персональных данных осуществляется в случаях:</p>
+      <ul>
+        <li>наличия от Вас согласия в письменной форме на трансграничную передачу;</li>
+        <li>исполнения договора, стороной которого являетесь Вы;</li>
+        <li>защиты Вашей жизни, здоровья и иных жизненно важных интересов при невозможности получения согласия в
+          письменной форме.</li>
+      </ul>
+      <p>Трансграничная передача данных будет осуществляться в соответствии с применимым законодательством, и мы
+        предпримем все необходимые меры, чтобы убедиться, что вовлеченные третьи лица предоставят достаточный уровень
+        защиты.</p>
+      <p>От любой принимающей/обрабатывающей организации, к которой мы будем обращаться в будущем по поводу Сайтов,
+        будет требоваться то же самое.</p>
+      <p><span style="font-weight:bold">3. Безопасность</span></p>
+      <p>При обработке ПДн мы принимаем необходимые правовые, организационные и технические меры для защиты ПДн от
+        неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, предоставления,
+        распространения ПДн, а также от иных неправомерных действий в отношении ПДн.</p>
+      <p>К таким мерам в соответствии с 152-ФЗ, в частности, относятся:</p>
+      <ul>
+        <li>Назначение ответственного за обработку ПДн;</li>
+        <li>Регистрация в реестре операторов персональных данных.</li>
+        <li>Определение угроз безопасности ПДн при их обработке в информационных системах ПДн;</li>
+        <li>Применение организационных и технических мер по обеспечению безопасности ПДн при их обработке в
+          информационных системах ПДн, необходимые для выполнения требований к защите ПДн, исполнение которых
+          обеспечивает установленные Правительством РФ уровни защищенности ПДн;</li>
+        <li>Применение прошедших в установленном порядке процедуру оценки соответствия средств защиты информации;</li>
+        <li>Проведение оценки эффективности принимаемых мер по обеспечению безопасности ПДн до ввода в эксплуатацию
+          информационной системы ПДн;</li>
+        <li>Ведение учета машинных носителей ПДн;</li>
+        <li>Контроль фактов несанкционированного доступа к ПДн и принятие мер по недопущению подобных инцидентов в
+          дальнейшем;</li>
+        <li>Возможность восстановления ПДн, модифицированных или уничтоженных вследствие несанкционированного доступа к
+          ним;</li>
+        <li>Установление правил доступа к персональным данным, обрабатываемым в информационной системе ПДн, а также
+          обеспечение регистрации и учета всех действий, совершаемых с персональными данными в информационной системе
+          ПДн;</li>
+        <li>Контроль за принимаемыми мерами по обеспечению безопасности ПДн и уровнем защищенности информационных систем
+          ПДн.</li>
+      </ul>
+      <p>Если у Вас есть опасения, что безопасность нашей с Вами коммуникации нарушена (например, если Вам кажется, что
+        безопасность любого вашего аккаунта в нашей системе под угрозой), пожалуйста, незамедлительно сообщите нам о
+        проблеме способами, указанными в разделе «Контакты».</p>
+      <p><span style="font-weight:bold">4. Права и обязанности субъектов ПДн, а также Компании в части обработки
+          ПДн</span></p>
+      <p>Клиент имеет право получить от Компании:</p>
+      <ul>
+        <li>подтверждение факта обработки ПДн и сведения о наличии ПДн, относящихся к соответствующему субъекту ПДн;
+        </li>
+        <li>сведения о правовых основаниях и целях обработки ПДн;</li>
+        <li>сведения о применяемых способах обработки ПДн;</li>
+        <li>сведения о наименовании и местонахождении Компании;</li>
+        <li>сведения о лицах, которые имеют доступ к Данным или которым могут быть раскрыты ПДн на основании договора с
+          Компанией или на основании федеральных законов;</li>
+        <li>перечень обрабатываемых ПДн, относящихся к субъекту ПДн, и информацию об источнике их получения, если иной
+          порядок предоставления таких ПДн не предусмотрен федеральными законами;</li>
+        <li>сведения о сроках обработки ПДн, в том числе о сроках их хранения;</li>
+        <li>сведения о порядке осуществления субъектом ПДн прав, предусмотренных 152-ФЗ;</li>
+        <li>информацию об осуществляемой или о предполагаемой трансграничной передаче ПДн;</li>
+        <li>наименование и адрес лиц, осуществляющих обработку ПДн по поручению Компании;</li>
+        <li>иные сведения, предусмотренные 152-ФЗ или другими нормативно-правовыми актами Российской Федерации;</li>
+      </ul>
+      <p>Клиент имеет право потребовать от Компании:</p>
+      <ul>
+        <li>уточнения своих ПДн, их блокирования или уничтожения в случае, если ПДн являются неполными, устаревшими,
+          неточными, незаконно полученными или не являются необходимыми для заявленной цели обработки;</li>
+        <li>отозвать свое согласие на обработку ПДн;</li>
+        <li>требовать устранения неправомерных действий Компании в отношении его ПДн;</li>
+        <li>обжаловать действия или бездействие Компании в Роскомнадзор или в судебном порядке в случае, если субъект
+          ПДн считает, что Компания осуществляет обработку его ПДн с нарушением требований законодательства или иным
+          образом нарушает его права и свободы;</li>
+        <li>возмещения убытков и/или компенсацию морального вреда в судебном порядке для защиты своих прав и законных
+          интересов.</li>
+      </ul>
+      <p><span style="font-weight:bold">5. Сайты третьих лиц</span></p>
+      <p>В настоящей Политике мы не рассматриваем и не несем ответственности за конфиденциальность, информацию или
+        другие аспекты деятельности любых третьих лиц, включая любое третье лицо, управляющее любым сайтом, ссылка на
+        который содержится на Сайтах. Наличие ссылки на Сайтах не подразумевает поддержку нами или нашими дочерними
+        компаниями сайта, на который ведет ссылка.</p>
+      <p>Кроме того, мы можем предоставить Вам доступ к функциональным возможностям третьих сторон, которые позволяют
+        Вам публиковать содержимое в Вашем(их) аккаунте(ах) в социальных медиа. Обратите внимание, что любая информация,
+        предоставленная Вами путем использования таких функциональных возможностей, управляется политикой
+        конфиденциальности применимой третьей стороны, а не настоящей Политикой. Мы не имеем возможности контролировать
+        и не несем ответственности за использование информации, предоставленной Вами путем использования таких
+        функциональных возможностей, любой третьей стороной.</p>
+      <p>Мы также не несем ответственности за сбор, использование и разглашение политики и практики (включая политику
+        безопасности данных) других организаций, таких, как Facebook, Apple, Google, Microsoft, RIM и любого другого
+        разработчика приложений, поставщика приложений, поставщика платформ социальных медиа, поставщика операционной
+        системы, поставщика беспроводной сети или производителя устройства, включая Персональные данные, разглашаемые
+        Вами другим организациям посредством или с использованием Приложений или наших Страниц в Социальных Медиа.</p>
+      <p><span style="font-weight:bold">6. Срок хранения</span></p>
+      <p>Мы будем хранить Ваши ПДн, до:</p>
+      <ul>
+        <li>достижения целей обработки Ваших ПДн;</li>
+        <li>выполнения условий договора, стороной которого, выгодоприобретателем или поручителем, по которому являетесь
+          Вы;</li>
+        <li>Окончания срока, указанного в согласии на обработку ПДн полученного от Вас.</li>
+      </ul>
+      <p><span style="font-weight:bold">7. Использование сайтов несовершеннолетними</span></p>
+      <p>Если Ваш возраст меньше 18 лет, Вам необходимо ознакомиться с условиями настоящей Политики вместе с Вашим
+        законным представителем (родителем или опекуном), чтобы удостовериться, что Вы оба понимаете ее суть. Несмотря
+        на то, что определение возраста наших пользователей не входит в наши обязанности, мы можем производить
+        верификационные проверки. Если нам станет известно, что мы собирали информацию лица, не достигнувшего 18-летнего
+        возраста, без согласия родителей, мы удалим такую информацию в кратчайшие сроки и можем заблокировать доступ
+        такого лица к применимому сайту в сети Интернет.</p>
+      <p>Мы предлагаем детские программы, которые приобретаются взрослыми. В целях защиты личной жизни
+        несовершеннолетних нам необходимо согласие родителей от пользователей, бронирующих программу или заказывающих
+        буклет для какой-либо из таких программ, которым не исполнилось 18 лет.</p>
+      <p><span style="font-weight:bold">8. Специальная категория ПДн</span></p>
+      <p>Мы просим Вас не присылать нам и не разглашать Персональные Данные относящиеся к специальной категории
+        (касающихся расовой, национальной принадлежности, политических взглядов, религиозных или философских убеждений,
+        состояния здоровья, интимной жизни) на Сайтах или каким-либо другим способом. </p>
+      <p><span style="font-weight:bold">9. Дополнения к настоящей Политике</span></p>
+      <p>Настоящая Политика является локальным нормативным документом Компании и хранится в бумажном виде по адресу
+        местонахождения Компании у сотрудника, ответственного за организацию обработки ПДн.</p>
+      <p>Настоящая Политика может быть пересмотрена в любом из следующих случаев:</p>
+      <ul>
+        <li>при изменении законодательства Российской Федерации в области обработки и защиты ПДн;</li>
+        <li>в случаях получения предписаний на устранение несоответствий, затрагивающих область действия Политики;</li>
+        <li>по решению руководства Компании;</li>
+        <li>при изменении целей обработки ПДн;</li>
+        <li>при изменении организационной структуры, структуры информационных и/или телекоммуникационных систем (или
+          введении новых);</li>
+        <li>при применении новых технологий обработки ПДн (в т.ч. передачи, хранения);</li>
+        <li>при появлении необходимости в изменении процесса обработки ПДн, связанной с деятельностью Компании.</li>
+      </ul>
+      <p>Любые изменения в настоящей Политике вступят в силу с момента публикации настоящей Политики на Сайте.
+        Использование Вами Сайтов после таких изменений означает, что Вы принимаете измененную Политику.</p>
+      <p><span style="font-weight:bold">10. Контакты и права субъекта персональных данных</span></p>
+      <p>Лица, чьи ПДн обрабатываются Компанией, могут получить разъяснения по вопросам обработки своих ПДн, обратившись
+        лично в Компанию или направив соответствующий письменный запрос по адресу местонахождения Компании: 454080, г.
+        Челябинск, ул. Коммуны, 133</p>
+      <p>В случае направления официального запроса в Компанию в тексте запроса необходимо указать:</p>
+      <ul>
+        <li>фамилию, имя, отчество субъекта ПДн или его представителя;</li>
+        <li>номер основного документа, удостоверяющего личность субъекта ПДн или его представителя, сведения о дате
+          выдачи указанного документа и выдавшем его органе;</li>
+        <li>сведения, подтверждающие наличие у субъекта ПДн отношений с Компанией (номер договора, дата заключения
+          договора, и (или) иные сведения);</li>
+        <li>подпись субъекта ПДн (или его представителя).</li>
+      </ul>
+      <p>Со всеми вопросами, комментариями или проблемами по поводу настоящей Политики обращайтесь к ответственному за
+        обработку персональных данных: info@zoloterra.ru</p>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery.inputmask.bundle.min.js"></script>
+  <script src="assets/js/jquery.inputmask-multi.min.js"></script>
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script src="%40babel/polyfill%407.12.1/dist/polyfill.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  <script src="npm/vue%402.6.14"></script>
+  <script src="axios%400.27.2/dist/axios.min.js"></script>
+  <script src="vuex%403.4.0/dist/vuex.js"></script>
+  <script src="assets/data/store.js"></script>
+  <script src="assets/js/vue-tel-input.js"></script>
+  <script src="npm/%40riophae/vue-treeselect%40%5E0.4.0/dist/vue-treeselect.umd.min.js"></script>
+  <script src="ajax/libs/pdfmake/0.1.65/pdfmake.min.js"></script>
+  <script src="ajax/libs/pdfmake/0.1.65/vfs_fonts.js"></script>
+  <script src="assets/js/vue-mask.js"></script>
+  <script src="imask%406.4.3/dist/imask.js"></script>
+  <script src="assets/js/vue.js"></script>
+
+</body>
+
+</html>
