@@ -984,7 +984,8 @@ transition: background-color .4s ease
     background: #27323a;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/straw13.jpg);
+    background-image: url(./img/
+        13.jpg);
     background-attachment: fixed
 }
 
@@ -3716,7 +3717,7 @@ transition: background-color .4s ease
     background: #27323a;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/straw13.jpg);
+    background-image: url(./img/straw13.jpg);
     background-attachment: fixed;
     display: -ms-flexbox;
     display: flex;
