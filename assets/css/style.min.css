@@ -1,62 +1,3 @@
-
-
-
-
-.title__slider {
-     
-  }
-  
-  .title__wrapper {
-     
-  }
-  
-  .title__slide {
-    
-  }
-  
-  .swiper {
-    overflow: hidden;
-  }
-  
-  .swiper-wrapper {
-    width: 100%;
-    height: 100%;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-  }
-  
-  .swiper-vertical .swiper-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  
-  .swiper-autoheight .swiper-wrapper {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  
-  .swiper-initialized .swiper-slide {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-  }
-  
-  .swiper-android .swiper-slide,
-  .swiper-android .swiper-wrapper {
-    -webkit-transform: translate3d(0px, 0, 0);
-            transform: translate3d(0px, 0, 0);
-  }
-  
-  .swiper-button-lock {
-    display: none !important;
-  }
-
 .clear:after,
 .clear:before {
     content: " ";
@@ -1088,8 +1029,7 @@ textarea {
     font-size: 44px;
     line-height: 1.1;
     max-width: 1050px;
-    width: 150%;
-    overflow: hidden;
+    width: 100%
 }
 
 .main-screen__content-title p {
