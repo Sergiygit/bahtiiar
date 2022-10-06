@@ -1,58 +1,73 @@
 .visa-support__container {
-     overflow:auto;
-    margin-bottom: 50px;
-    padding: 10px 15px 50px ;
      
-    height:100%;
+    margin-bottom: 50px;
+    padding: 10px 15px 50px;
+    height: 100%;
 }
+
 .visa-support__title {
     font-weight: 700;
     font-size: 17px;
     line-height: 22px;
-   /* identical to box height */
     letter-spacing: 0.028em;
     text-align: center;
     color: #fff;
     margin-bottom: rem(20);
 }
+
 .visa-support__cards-visa-support {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 40px;
     text-align: right;
 }
+
+.visa-support__cards-state-support {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 20px;
+    text-align: right;
+}
 @media (max-width: em(1500)) {
     .visa-support__cards-visa-support {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-   }
+    }
 }
+
 @media (max-width: em(1100)) {
     .visa-support__cards-visa-support {
         grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-   }
+    }
 }
+
 .cards-visa-support__card-visa {
     border-radius: 10px;
     background-color: #fff;
 }
+
 .card-visa__content {
     display: flex;
     justify-content: space-between;
 }
+
 .card-visa__image {
     position: relative;
 }
+
 .card-visa__image._left {
     left: -10%;
 }
+
 .card-visa__image._bottom {
     bottom: -30px;
 }
+
 .card-visa__image img {
     position: absolute;
     left: -30%;
     bottom: 0;
 }
+
 .card-visa__body {
     padding: 22px 35px;
     height: 100%;
@@ -62,8 +77,10 @@
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.623);
     z-index: 2;
+    text-align: center;
 }
-.card-visa__title {
+
+.card-visa__title {text-align: center;
     margin-bottom: rem(10);
     font-weight: 700;
     font-size: 20px;
@@ -71,6 +88,7 @@
     letter-spacing: 0.028em;
     color: #ee394e;
 }
+
 .card-visa__text {
     font-weight: 350;
     font-size: 14px;
@@ -80,6 +98,7 @@
     color: #000;
     margin-bottom: rem(14);
 }
+
 .card-visa__more {
     display: flex;
     align-items: center;
@@ -92,24 +111,31 @@
     letter-spacing: 0.028em;
     color: #ee394e;
 }
+
 .card-visa__more img {
     margin-top: rem(7);
 }
+
 .card-state__body {
+    max-width: 170px;
+    background: #fff;
     display: flex;
+    flex-direction:column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 20px 50px;
-    height: 100%;
+    padding: 20px 10px 0 10px;
+     border-radius: 10px;
 }
+
 .card-state__image {
     position: relative;
-    max-width: 205px;
-    max-height: 115px;
-    min-width: 205px;
-    min-height: 115px;
+    max-width: 105px;
+    max-height: 55px;
+    min-width: 105px;
+    min-height: 55px;
 }
+
 .card-state__image img {
     position: absolute;
     top: 0;
@@ -118,13 +144,14 @@
     height: 100%;
     object-fit: cover;
 }
+
 .card-state__title {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.028em;
     color: #ee394e;
-    padding-right: 15px;
+     
 }
 
 .swiper-wrapper {
@@ -1027,7 +1054,7 @@ textarea {
 .header__logo img {
     width: 170px;
     z-index: 9999;
-    margin-top: 8px
+    margin-top: 8px;border-radius: 50%
 }
 
 .header__logo span {
@@ -1212,17 +1239,7 @@ textarea {
     background-color: #263038
 }
 
-.second-screen:before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 250px;
-    background-color: #a72837;
-    top: 85%;
-    left: 50%;
-    z-index: 999;
-    transform: translateX(-50%)
-}
+ 
 
 .second-screen .wrapper {
     padding-top: 150px;
