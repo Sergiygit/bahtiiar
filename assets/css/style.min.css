@@ -1,7 +1,5 @@
 .visa-support__container {
-     
-    margin-bottom: 50px;
-    padding: 10px 15px 50px;
+    padding: 10px 15px 20px;
     height: 100%;
 }
 
@@ -12,12 +10,12 @@
     letter-spacing: 0.028em;
     text-align: center;
     color: #fff;
-    margin-bottom: rem(20);
+    margin-bottom: 50px;
 }
 
 .visa-support__cards-visa-support {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 40px;
     text-align: right;
 }
@@ -28,17 +26,18 @@
     gap: 20px;
     text-align: right;
 }
-@media (max-width: em(1500)) {
+@media (max-width: em(768)) {
     .visa-support__cards-visa-support {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+    }
+    .visa-support__cards-state-support {
+        
+        grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+         
     }
 }
 
-@media (max-width: em(1100)) {
-    .visa-support__cards-visa-support {
-        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    }
-}
+ 
 
 .cards-visa-support__card-visa {
     border-radius: 10px;
@@ -66,10 +65,11 @@
     position: absolute;
     left: -30%;
     bottom: 0;
+     
 }
 
 .card-visa__body {
-    padding: 22px 35px;
+    padding: 22px 30px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -117,14 +117,14 @@
 }
 
 .card-state__body {
-    max-width: 170px;
+    max-width: 160px;
     background: #fff;
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px 10px 0 10px;
+    padding: 10px 10px 0 10px;
      border-radius: 10px;
 }
 
