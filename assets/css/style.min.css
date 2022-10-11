@@ -1106,6 +1106,12 @@ textarea {
     cursor: pointer;
     transition: background-color .4s ease
 }
+@media only screen and (max-width:992px) {
+     
+    .header__whatsapp {
+        margin-right:70px;  
+    }
+}
 
 .header__whatsapp img {
     width: 50px;
@@ -1251,7 +1257,7 @@ textarea {
     margin-bottom: 100px;
     position: relative;
     font-family: Stem, sans-serif;
-    font-size: 14px;
+    font-size: 26px;
     font-weight: 700;
     letter-spacing: .2em;
     line-height: 1.25;
@@ -5175,7 +5181,11 @@ only screen and (max-width:1240px) {
     .fourth-screen .wrapper,
     .second-screen .wrapper,
     .third-screen .wrapper {
-        padding-top: 80px
+        padding-top: 80px;
+        height: 100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .numbers__value {
         font-size: 80px
@@ -6190,7 +6200,11 @@ only screen and (max-width:1240px) {
     .second-screen .wrapper,
     .steps-screen .wrapper,
     .third-screen .wrapper {
-        padding-top: 70px
+        padding-top: 70px;
+        height: 100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .feedback .wrapper--top {
         padding-top: 50px
