@@ -7,7 +7,7 @@
     font-weight: 700;
     font-size: 25px;
     line-height: 32px;
-    padding-bottom: 30px;
+    padding-bottom: 85px;
     letter-spacing: 0.028em;
     color: #FFFFFF;
   }
@@ -1651,7 +1651,8 @@ textarea {
 
 .fourth-screen__title {
     color: #fff;
-    margin-bottom: 80px;
+    margin-top:20px;
+    margin-bottom: 20px;
     position: relative;
     font-family: Stem, sans-serif;
     font-size: 14px;
@@ -1660,12 +1661,12 @@ textarea {
     line-height: 1.25;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 0
+     
 }
 
 .fourth-screen__content-text {
-    color: #9da3a6;
-    font-size: 30px;
+    color: #ff115b;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
@@ -6139,7 +6140,7 @@ only screen and (max-width:1240px) {
     }
     .fourth-screen__content-text,
     .numbers__text span {
-        font-size: 25px
+        font-size: 18px
     }
     .header .wrapper,
     .wrapper {
@@ -6432,7 +6433,7 @@ only screen and (max-width:1240px) {
         font-size: 19px
     }
     .fourth-screen__content-text {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 30px
     }
     .numbers__value {
