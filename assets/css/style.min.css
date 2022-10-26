@@ -1,98 +1,92 @@
-.page__abroad {
-     
-  }
-  
-  .abroad__title {
+.page__abroad {}
+
+.abroad__title {
     text-align: center;
     font-weight: 700;
     font-size: 25px;
     line-height: 32px;
-    padding-bottom: 85px;
+    padding-bottom: 30px;
     letter-spacing: 0.028em;
     color: #FFFFFF;
-  }
-  
-  @supports (padding-top: clamp( 0.9375rem , 0.8299731183rem  +  0.5376344086vw , 1.25rem )) {
+}
+
+@supports (padding-top: clamp( 0.9375rem, 0.8299731183rem + 0.5376344086vw, 1.25rem)) {
     .abroad__title {
-      padding-top: clamp( 0.9375rem , 0.8299731183rem  +  0.5376344086vw , 1.25rem );
+        padding-top: clamp( 0.9375rem, 0.8299731183rem + 0.5376344086vw, 1.25rem);
     }
-  }
-  
-  @supports not (padding-top: clamp( 0.9375rem , 0.8299731183rem  +  0.5376344086vw , 1.25rem )) {
+}
+
+@supports not (padding-top: clamp( 0.9375rem, 0.8299731183rem + 0.5376344086vw, 1.25rem)) {
     .abroad__title {
-      padding-top: calc(0.9375rem + 0.3125 * (100vw - 20rem) / 58.125);
+        padding-top: calc(0.9375rem + 0.3125 * (100vw - 20rem) / 58.125);
     }
-  }
-  
-  .abroad__items-abroad {
+}
+
+.abroad__items-abroad {
     display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
-  }
-  
-  .items-abroad__abroad-item {
+}
+
+.items-abroad__abroad-item {
     background: rgb(255, 255, 255);
     padding: 0 10px 15px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
-  .abroad-item__state {
+}
+
+.abroad-item__state {
     font-weight: 700;
     font-size: 26px;
     line-height: 33px;
     letter-spacing: 0.028em;
     color: #263038;
     text-align: center;
-  }
-  
-  .abroad-item__image {
+}
+
+.abroad-item__image {
     margin: 0 auto;
     position: relative;
     width: 160px;
     height: 100px;
-  }
-  
-  .abroad-item__image img {
+    max-width: 160px;
+    max-height: 100px;
+    margin-bottom:15px;
+}
+
+.abroad-item__image img {
     position: absolute;
     width: 100%;
     height: 100%;
-  }
-  
-  .abroad-item__text {
+}
+
+.abroad-item__text {
     font-size: 16px;
     line-height: 18px;
     font-weight: 300;
     text-align: center;
     letter-spacing: 0.053em;
     color: #9DA3A6;
-  }
-  
-  .abroad-item__vacantions {
+}
+
+.abroad-item__vacantions {
     font-size: 18px;
     line-height: 25px;
-     
-    
-   
     letter-spacing: 0.053em;
     -webkit-text-decoration-line: underline;
-            text-decoration-line: underline;
-  }
-  
-  .abroad-item__vacantions li {
+    text-decoration-line: underline;
+}
+
+.abroad-item__vacantions li {
     position: relative;
     color: #71A4CD;
     padding: 0 0 0 10px;
-    font-size:14px;color: #71A4CD;
-
-  }
-  
-   
-  
-
+    font-size: 14px;
+    color: #71A4CD;
+}
 
 .visa-support__container {
     padding: 10px 15px 30px;
@@ -122,12 +116,11 @@
     gap: 20px;
     text-align: right;
 }
- 
-.third-screen1{
-    background:#263038;
+
+.third-screen1 {
+    background: #263038;
     padding: 0px 0px 50px;
 }
- 
 
 .cards-visa-support__card-visa {
     border-radius: 10px;
@@ -155,7 +148,7 @@
     position: absolute;
     left: -30%;
     bottom: 0;
-    height: 90%;     
+    height: 90%;
 }
 
 .card-visa__body {
@@ -165,12 +158,12 @@
     flex-direction: column;
     max-width: 330px;
     border-radius: 10px;
-     
     z-index: 2;
     text-align: center;
 }
 
-.card-visa__title {text-align: center;
+.card-visa__title {
+    text-align: center;
     margin-bottom: rem(10);
     font-weight: 700;
     font-size: 20px;
@@ -200,7 +193,6 @@
     line-height: 22px;
     letter-spacing: 0.028em;
     color: #ee394e;
-
 }
 
 .card-visa__more img {
@@ -208,15 +200,14 @@
 }
 
 .card-state__body {
-     
     background: #fff;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px 10px 0 10px;
-     border-radius: 10px;
+    border-radius: 10px;
 }
 
 .card-state__image {
@@ -242,14 +233,11 @@
     line-height: 26px;
     letter-spacing: 0.028em;
     color: #ee394e;
-     
 }
 
 @media (min-width: em(768)) {
-     
     .card-state__body {
         max-width: 160px;
-         
     }
 }
 
@@ -258,12 +246,9 @@
         grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
     }
     .visa-support__cards-state-support {
-        
         grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
-         
     }
 }
-
 
 .swiper-wrapper {
     width: 100%;
@@ -1165,7 +1150,8 @@ textarea {
 .header__logo img {
     width: 170px;
     z-index: 9999;
-    margin-top: 8px;border-radius: 50%
+    margin-top: 8px;
+    border-radius: 50%
 }
 
 .header__logo span {
@@ -1217,10 +1203,10 @@ textarea {
     cursor: pointer;
     transition: background-color .4s ease
 }
+
 @media only screen and (max-width:992px) {
-     
     .header__whatsapp {
-        margin-right:70px;  
+        margin-right: 70px;
     }
 }
 
@@ -1355,8 +1341,6 @@ textarea {
     height: 100vh;
     background-color: #263038
 }
-
- 
 
 .second-screen .wrapper {
     padding-top: 150px;
@@ -1651,8 +1635,7 @@ textarea {
 
 .fourth-screen__title {
     color: #fff;
-    margin-top:20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
     font-family: Stem, sans-serif;
     font-size: 14px;
@@ -1661,12 +1644,12 @@ textarea {
     line-height: 1.25;
     text-align: center;
     text-transform: uppercase;
-     
+    margin-top: 0
 }
 
 .fourth-screen__content-text {
-    color: #ff115b;
-    font-size: 20px;
+    color: #9da3a6;
+    font-size: 30px;
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
@@ -5295,7 +5278,7 @@ only screen and (max-width:1240px) {
     .third-screen .wrapper {
         padding-top: 80px;
         height: 100vh;
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
     }
@@ -6140,7 +6123,7 @@ only screen and (max-width:1240px) {
     }
     .fourth-screen__content-text,
     .numbers__text span {
-        font-size: 18px
+        font-size: 25px
     }
     .header .wrapper,
     .wrapper {
@@ -6314,7 +6297,7 @@ only screen and (max-width:1240px) {
     .third-screen .wrapper {
         padding-top: 70px;
         height: 100vh;
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
     }
@@ -6433,7 +6416,7 @@ only screen and (max-width:1240px) {
         font-size: 19px
     }
     .fourth-screen__content-text {
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 30px
     }
     .numbers__value {
