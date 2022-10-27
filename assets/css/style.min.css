@@ -1,5 +1,12 @@
 .page__abroad {}
 
+@media (min-width:768px){
+    .third-screen1{
+        height:100vh;
+        min-height:700px;
+    }
+}
+
 .abroad__title {
     text-align: center;
     font-weight: 700;
@@ -6418,6 +6425,12 @@ only screen and (max-width:1240px) {
     .fourth-screen__content-text {
         font-size: 20px;
         margin-bottom: 30px
+    }
+    @media (max-width:768px){
+        .fourth-screen__content-text {
+            font-size: 16px;
+            margin-bottom: 15px
+        }
     }
     .numbers__value {
         font-size: 60px
