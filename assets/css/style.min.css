@@ -1,3 +1,9 @@
+.card-state__list{
+    text-align:left;
+    padding-top:0;
+}
+
+
 .page__abroad {}
 
 @media (min-width:768px){
@@ -96,7 +102,7 @@
 }
 
 .visa-support__container {
-    padding: 10px 15px 30px;
+    padding: 10px 15px 10px;
     height: 100%;
 }
 
@@ -237,7 +243,7 @@
 .card-state__title {
     font-weight: 700;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 20px;
     letter-spacing: 0.028em;
     color: #ee394e;
 }
@@ -845,12 +851,13 @@ body.ovh {
     border-color: transparent
 }
 
-.block-bottom a.header__btn {
+.block-bottom a.header__button {
     color: #fff;
+    text-decoration:none;
     border-bottom-color: #fff
 }
 
-.block-bottom a.header__btn:hover {
+.block-bottom a.header__button:hover {
     border-bottom-color: transparent
 }
 
@@ -1155,7 +1162,7 @@ textarea {
 }
 
 .header__logo img {
-    width: 170px;
+    width: 100px;
     z-index: 9999;
     margin-top: 8px;
     border-radius: 50%
@@ -1178,14 +1185,14 @@ textarea {
 }
 
 .header .wrapper,
-.header__btn {
+.header__button {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center
 }
 
-.header__btn {
+.header__button {    text-decoration: none;
     z-index: 9999;
     background: transparent;
     border: 1px solid #fff;
@@ -1223,7 +1230,7 @@ textarea {
     z-index: 9999;
 }
 
-.header__btn:hover {
+.header__button:hover {
     background-color: hsla(0, 0%, 100%, .1)
 }
 
@@ -5432,7 +5439,7 @@ only screen and (max-width:1240px) {
         right: 50px;
         display: block
     }
-    .header__btn {
+    .header__button {
         display: none
     }
     .fourth-screen .wrapper {
@@ -5479,7 +5486,7 @@ only screen and (max-width:1240px) {
     .block-bottom {
         padding-top: 50px
     }
-    .block-bottom .header__btn {
+    .block-bottom .header__button {
         display: block
     }
     .block-bottom__close {
@@ -5860,7 +5867,7 @@ only screen and (max-width:1240px) {
         width: 70%;
         margin: 0 auto
     }
-    .header__btn {
+    .header__button {
         line-height: 50px
     }
     .form-page .feedback__preview-img {
