@@ -2041,6 +2041,7 @@ textarea {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: relative
