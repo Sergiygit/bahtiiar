@@ -2088,6 +2088,30 @@ textarea {
     color: #fff
 }
 
+.seventh-screen__content-point1 {
+    position: relative;
+    font-size: 24px;
+    color: #fff;
+    width: 44%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: start;
+    padding-left: 30px
+
+}
+.seventh-screen__content-point1 span{
+    margin-right:15px;
+    color:#ee394e;
+    font-size: 26px;
+    font-weight:700;
+}
+ 
+
+.seventh-screen__content-point1-link {
+    color: #fff
+}
+
 .steps-screen {
     height: 100vh;
     background-color: #1c2227;
