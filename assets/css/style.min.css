@@ -48,7 +48,6 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .abroad-item__state {
@@ -61,13 +60,15 @@
 }
 
 .abroad-item__image {
-    margin: 0 auto;
+   
     position: relative;
+    
     width: 160px;
     height: 100px;
     max-width: 160px;
     max-height: 100px;
     margin-bottom:15px;
+    margin: 20px auto;
 }
 
 .abroad-item__image img {
@@ -83,10 +84,13 @@
     text-align: center;
     letter-spacing: 0.053em;
     color: #9DA3A6;
+    margin-bottom:10px;
 }
 
 .abroad-item__vacantions {
     font-size: 18px;
+    margin-top:auto;
+     
     line-height: 25px;
     letter-spacing: 0.053em;
     -webkit-text-decoration-line: underline;
