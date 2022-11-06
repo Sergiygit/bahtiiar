@@ -1349,6 +1349,14 @@ textarea {
     text-transform: uppercase;
 }
 
+@media only screen and (max-width:1000px) {
+    .main-screen__content-title {
+         
+        width: 90%;
+       
+    }
+}
+
 .main-screen__content-title p {
     margin: 0;
     margin-top: 10px
@@ -5304,7 +5312,7 @@ only screen and (max-width:1240px) {
         width: 100%
     }
     .main-screen__content-title {
-        font-size: 32px
+        font-size: 34px
     }
     .reviews__left {
         padding-left: 0
@@ -5469,7 +5477,7 @@ only screen and (max-width:1240px) {
         display: block
     }
     .header__button {
-        display: none
+        margin-right:70px;
     }
     .fourth-screen .wrapper {
         padding-bottom: 150px
@@ -6054,7 +6062,7 @@ only screen and (max-width:1240px) {
         content: none
     }
     .main-screen__content-title {
-        font-size: 30px;
+        font-size: 28px;
         line-height: 1.1
     }
     .burger {
@@ -6099,7 +6107,7 @@ only screen and (max-width:1240px) {
         width: 100px
     }
     .main-screen__content-title {
-        font-size: 25px!important
+        font-size: 20px
     }
     .third-screen .swiper-slide {
         margin-bottom: 50px
@@ -6161,7 +6169,7 @@ only screen and (max-width:1240px) {
         left: 20%
     }
     .main-screen__content-title {
-        font-size: 22px!important
+        font-size: 18px!important
     }
     .nav.fixed {
         padding-top: 100px
@@ -6190,7 +6198,7 @@ only screen and (max-width:1240px) {
         height: 70%
     }
     .main-screen__content-title {
-        font-size: 25px;
+        
         margin-top: 0
     }
     .main-screen__content-title p {
@@ -6220,7 +6228,7 @@ only screen and (max-width:1240px) {
         height: 70%
     }
     .main-screen__content-title {
-        font-size: 25px
+        font-size: 20px
     }
     .main-screen__content-title p {
         margin-top: 6px
