@@ -2319,7 +2319,7 @@ textarea {
 
 .gallery-screen__title {
     color: #000;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     position: relative;
     font-family: Stem, sans-serif;
     font-size: 26px;
@@ -5513,8 +5513,17 @@ only screen and (max-width:1240px) {
         display: none
     }
 }
-
+.arrows{
+    display:none;
+}
 @media only screen and (max-width:767px) {
+    .gallery-screen__swiper {
+        height: auto;
+        padding-top: 90px
+    }
+    .arrows{
+        display:block;
+    }
     .test__answer {
         width: 100%
     }
