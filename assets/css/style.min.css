@@ -2037,15 +2037,25 @@ textarea {
 }
 
 .seventh-screen__content-text {
-    width: 25%;
+    width: 50%;
     display: -ms-flexbox;
-   
-     
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
     position: relative
 }
 .seventh-screen__content-text li{
      margin-bottom:10px;
      
+}
+.content-text-mobile{
+    width: 25%;
+    display: -ms-flexbox;
+   
+    position: relative
 }
 
 .seventh-screen__content {
@@ -5790,8 +5800,7 @@ only screen and (max-width:1240px) {
     }
     .seventh-screen__content-text {
         width: 100%;
-        margin:0px;
-         
+         margin:0;
     }
     .seventh-screen__content-pic {
         width: 60%!important
