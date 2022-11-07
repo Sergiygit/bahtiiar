@@ -2041,6 +2041,10 @@ textarea {
     flex-wrap: wrap;
     position: relative
 }
+.seventh-screen__content-text li{
+     margin-bottom:10px;
+     
+}
 
 .seventh-screen__content {
     position: relative;
@@ -2082,14 +2086,17 @@ textarea {
 
 .seventh-screen__content-point1 {
     position: relative;
-    font-size: 24px;
+    font-size: 16px;
     color: #fff;
     width: 44%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
     align-items: start;
-    padding-left: 30px
+    padding-left: 30px;
+     
+     
+
 }
 
 .seventh-screen__content-point1 span {
@@ -2097,6 +2104,7 @@ textarea {
     color: #ee394e;
     font-size: 26px;
     font-weight: 700;
+    margin-top: -5px;
 }
 
 .seventh-screen__content-point1-link {
