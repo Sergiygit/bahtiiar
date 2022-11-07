@@ -4,12 +4,15 @@
 }
 
 .page__abroad {}
-
+.content-text-pc{
+    display: none;
+}
 @media (min-width:768px) {
     .third-screen1 {
         height: 100vh;
         min-height: 700px;
     }
+    
 }
 
 .abroad__title {
@@ -251,10 +254,12 @@
     color: #ee394e;
 }
 
-@media (min-width: em(768)) {
+@media (min-width: 768px) {
     .card-state__body {
         max-width: 160px;
     }
+     
+    
 }
 
 @media (max-width: em(768)) {
@@ -264,6 +269,7 @@
     .visa-support__cards-state-support {
         grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
     }
+   
 }
 
 .swiper-wrapper {
@@ -2031,14 +2037,10 @@ textarea {
 }
 
 .seventh-screen__content-text {
-    width: 50%;
+    width: 25%;
     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    align-items: center;
-    -ms-flex-wrap: wrap !important;
-    flex-wrap: wrap !important;
+   
+     
     position: relative
 }
 .seventh-screen__content-text li{
@@ -2088,7 +2090,7 @@ textarea {
     position: relative;
     font-size: 16px;
     color: #fff;
-    width: 44%;
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
@@ -5788,7 +5790,8 @@ only screen and (max-width:1240px) {
     }
     .seventh-screen__content-text {
         width: 100%;
-        margin-bottom: 70px
+        margin:0px;
+         
     }
     .seventh-screen__content-pic {
         width: 60%!important
