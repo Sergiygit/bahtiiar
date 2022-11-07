@@ -2037,8 +2037,8 @@ textarea {
     -ms-flex-pack: justify;
     justify-content: space-between;
     align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
     position: relative
 }
 .seventh-screen__content-text li{
@@ -2094,9 +2094,6 @@ textarea {
     -ms-flex-align: start;
     align-items: start;
     padding-left: 30px;
-     
-     
-
 }
 
 .seventh-screen__content-point1 span {
@@ -5874,6 +5871,11 @@ only screen and (max-width:1240px) {
 @media only screen and (max-width:650px) {
     .main-screen__content {
         padding: 10px
+    }
+    .seventh-screen__content-point1 {
+         
+        width: 100%;
+       
     }
     .banner p.banner__title,
     .banner p:first-child {
