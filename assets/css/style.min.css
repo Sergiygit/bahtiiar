@@ -2044,19 +2044,19 @@ textarea {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     -ms-flex-wrap: wrap !important;
     flex-wrap: wrap !important;
     position: relative
 }
 .seventh-screen__content-text li{
-     margin-bottom:10px;
+     margin-bottom:50px;
      
 }
 .content-text-mobile{
     width: 25%;
     display: -ms-flexbox;
-   
+    
     position: relative
 }
 
@@ -5305,6 +5305,10 @@ only screen and (max-width:1240px) {
     .block-bottom p {
         width: 100%
     }
+    .seventh-screen__content-text li{
+        margin-bottom:10px;
+        
+   }
     .main-screen__content-title {
         font-size: 34px
     }
